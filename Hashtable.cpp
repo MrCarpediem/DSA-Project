@@ -1,7 +1,8 @@
 # include <iostream>
-using namespace std;
 # include "Hashtable.hpp"
 # include <vector>
+
+using namespace std;
 
 Hashtable:: Hashtable()
 {

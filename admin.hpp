@@ -31,18 +31,24 @@ void admin()
             int acc, pass, balance;
 
             cout << "Enter name: ";
-            cin >> name;
+            cin.ignore();              // clear buffer
+            getline(cin, name);        // full line with spaces
+
             cout << "Enter address: ";
-            cin >> address;
+            getline(cin, address);     // full line with spaces
+
             cout << "Enter account number: ";
             cin >> acc;
+
             cout << "Enter password: ";
             cin >> pass;
+
             cout << "Enter balance: ";
             cin >> balance;
 
             t.add_Account(name, address, acc, pass, balance);
         }
+
         else if (condition == 2)
         {
             int acc = 0;

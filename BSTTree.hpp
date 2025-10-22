@@ -30,6 +30,6 @@ public:
     BSTNode* search(BSTNode* root, int accountno);
     void printoinfo(BSTNode* root);
 
-    // ✅ ये line add करो
+    //line add
     void update_transaction(int accountno, int amount);
 };
